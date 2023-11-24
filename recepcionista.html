@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Gestión de Reservas de Hotel</title>
+  <!-- Agrega la referencia a Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+      background: url('images/pexels-donald-tong-3.jpg') no-repeat center center fixed; /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen */
+      background-size: cover;
+      color: rgb(7, 26, 43);
+      
+      
+    }
+    .tamaño {
+      background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+      padding: 20px;
+      border: 2px solid rgba(255, 255, 255, 0.5); /* Borde blanco semitransparente con grosor de 2px */
+      border-radius: 5px;
+      margin-top: 10%;
+      width: 60%;
+      
+    }
+    .nav-link{
+        color: aliceblue;
+    }
+</style>
+<body>
+
+  <!-------------------------------------------------------------------- navbar  -------------------------------------------------------------------------------->
+  <nav class="navbar navbar-expand-md fixed-top " >
+    <div class="container d-flex">
+      <a class="navbar-brand" href="index.html ">
+        <img src="images/L_EmpaBee.png" alt="Logo" width="130" height="80" class="d-inline-block align-text-top ">
+      </a>
+      <li class="store-icon ms-auto dropdown list-unstyled ">
+        <a class="icon-link icon-link-hover   " style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="#">
+          <i class="bi bi-cart-fill "></i>
+        </a>
+      </li>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav   ">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Suscripciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Plataforma</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+            </a>
+            <ul class="dropdown-menu ">
+              <li><a class="dropdown-item" href="#">Sensor de PH </a></li>
+              <li><a class="dropdown-item" href="#">Sensor de Humedad</a></li>
+              <li><a class="dropdown-item" href="#">Sensor de Peso</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              cultivos
+            </a>
+            <ul class="dropdown-menu ">
+              <li><a class="dropdown-item" href="independiente.html">Apícola</a></li>
+              <li><a class="dropdown-item" href="empresa.html">Piscícola</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item dropdown list-unstyled ">
+
+            <button class="btn btn-outline-warning mt-2" type="submit">Contactar</button>
+          </li>
+
+          <li class="store-icon2 dropdown list-unstyled">
+            <a class="icon-link icon-link-hover   " style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);"
+              href="#">
+              <i class="bi bi-cart-fill "></i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-------------------------------------------------------------------- navbar  -------------------------------------------------------------------------------->
+
+
+  
+  <!-- Contenido Principal -->
+  <div class="container tamaño  ">
+    <!-- Sección de Reservas -->
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Reservas</h2>
+        <!-- Formulario de Reserva -->
+        <form>
+          <!-- Detalles de la Reserva (Ajustar según sea necesario) -->
+          <div class="mb-6">
+            <label for="tipoCliente">Tipo de Cliente:</label>
+            <select class="form-control" id="tipoCliente">
+              <option value="individual">Individual</option>
+              <option value="empresa">Empresa</option>
+            </select>
+          </div>
+  
+          <!-- Otros campos del formulario (añadir según sea necesario) -->
+          
+          <!-- Botón para realizar la reserva -->
+          <button type="submit" class="btn btn-primary mt-3">Realizar Reserva</button>
+        </form>
+      </div>
+  
+      <!-- Sección de Ocupación -->
+      <div class="col-md-6">
+        <h2>Ocupación</h2>
+        <!-- Mostrar detalles de ocupación (llamadas, servicio de bar, etc.) -->
+        <!-- Generar factura para el cliente al abandonar el hotel -->
+      </div>
+    </div>
+  
+    <!-- Sección de Recepcionista -->
+    <div class="row mt-4">
+      <div class="col-md-12">
+        <h2>Recepcionista</h2>
+        <!-- Gestionar clientes y reservas -->
+        <form>
+          <h4>Gestión de Clientes</h4>
+          <div class="mb-3">
+            <label for="buscarCliente">Buscar Cliente:</label>
+            <input type="text" class="form-control" id="buscarCliente" placeholder="Ingrese nombre o número de reserva">
+          </div>
+          <button type="submit" class="btn btn-primary">Buscar Cliente</button>
+  
+          <hr>
+  
+          <h4>Check-In</h4>
+          <div class="mb-3">
+            <label for="numReservaCheckIn">Número de Reserva:</label>
+            <input type="text" class="form-control" id="numReservaCheckIn" placeholder="Ingrese número de reserva">
+          </div>
+          <button type="submit" class="btn btn-success">Check-In</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- Agrega la referencia a Bootstrap JS y Popper.js (necesario para Bootstrap 5) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+</body>
+</html>

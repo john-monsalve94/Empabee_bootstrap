@@ -1,0 +1,256 @@
+/* ....................navbar.................................. */
+i{
+    color: orange;
+    font-size: 20px;
+}
+
+/* .dropdown:hover .dropdown-menu {
+display: flex;
+flex-direction: column;
+
+top: 100%;
+left: 0;
+z-index: 1000;
+} */
+/* Animación de la flechita del dropdown */
+/* .nav-item.dropdown:hover .nav-link::after {
+
+
+animation: movilidadFlecha 1s infinite; 
+}
+
+@keyframes movilidadFlecha {
+0% { transform: translateY(0); }
+50% { transform: translateY(-5px); }
+100% { transform: translateY(0); }
+} */
+
+
+/* .navbar-brand{
+    margin-left: 30px;
+    margin-right: 280px;
+} */
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-evenly;
+}
+.icon-link{
+    margin-left: 20px;
+}
+.nav-link{
+    font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+    .store-icon {
+        display: none;
+      
+        
+    }
+}
+@media screen and (max-width: 768px) {
+    .store-icon2 {
+        display: none;
+        
+    }
+}
+.navbar-toggler{
+    margin-left: 10px;
+}
+
+/* ....................navbar (end).................................. */
+/*------------------------------------- hero----------------------------- */
+
+.hero{
+    min-height: 200px;
+    text-align: center;
+}
+
+.texto-naranja{
+    color: orange;
+}
+.text-portada{
+
+width: 30%;
+height: 98%;
+flex-direction: column;
+position: absolute;
+left: 15%;
+top: 1%;
+
+font-family: 'Fjalla One', sans-serif;
+font-weight: 400;
+justify-content: center;
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .text-portada-izq{
+
+        font-size: medium;
+    }
+}
+@media screen and (max-width: 576px){
+    .hero-imagen-portada{
+       display: none;
+    }
+    .text-portada{
+        position: relative;
+        width: 70%;
+        height: auto;
+        left: auto;       
+    }
+.hero-principal{
+    justify-content: center;
+   }
+}
+/*  ----------------------hero(end)-------------------------------   */
+/*  ----------------------funcionalidad-------------------------------   */
+.titulo-funcion h2{
+font-size: xx-large;
+}
+
+.categoria-funcion h2{
+    color: rgb(120, 150, 150);
+    font-size: medium;
+}
+/*  ----------------------funcionalidad(end)-------------------------------   */
+
+
+
+/*-----------------------------------footer---------------------------------        */
+footer {
+  
+    
+     width: 100%;
+     background: #000000;
+     border-top: 3px solid rgb(245, 213, 69);
+   }
+   
+   /* Footer Top Start */
+   .footer-top {
+     display: flex;
+     
+     
+     
+     
+   }
+   .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .footer-top{
+     flex-wrap: wrap;
+     width: 100%;
+     justify-content: center;
+     
+     
+   }
+   
+   .footer-top .col .head-title h2 {
+     color: #fff;
+     font-weight: 600;
+     font-size: 18px;
+     text-transform: uppercase;
+
+     position: relative;
+     cursor: pointer;
+   }
+   
+   .footer-top .col .head-title h2::after {
+     content: "";
+     width: 8%;
+     height: 3px;
+     background: rgb(245, 213, 69);
+     position: absolute;
+     left: 0;
+     bottom: -2px;
+     transition: 0.5s;
+   }
+   
+
+   .footer-top .col .contenedor p {
+     font-size: 14px;
+     color: #8d99ae;
+    
+     
+   }
+   
+   .footer-top .col .contenedor ul li {
+     list-style: none;
+     
+   }
+   
+   .footer-top .col .contenedor ul li a {
+     text-decoration: none;
+     color: #8d99ae;
+     font-size: 14px;
+
+   }
+   
+   .footer-top .col .contenedor ul li a:hover {
+     color: rgb(245, 213, 69);
+   }
+   
+   .footer-top .col .contenedor ul li a i {
+     color: rgb(245, 213, 69);
+     
+   }
+   /* Footer Top Start */
+   
+   /* Footer Bottom Start */
+   .footer-bottom {
+     background: #2b2d42;
+     
+     font-size: 16px;
+     color: #8d99ae;
+   }
+   
+   .footer-bottom .payment-method ul {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+   }
+   
+   .footer-bottom .payment-method li {
+     list-style: none;
+     margin: 0 5px;
+     padding: 10px 0;
+   }
+   
+   .footer-bottom .payment-method li i {
+     font-size: 32px;
+     color: #8d99ae;
+     cursor: pointer;
+     transition: transform 0.5s;
+   }
+   
+   .footer-bottom .payment-method li i:hover {
+     color: rgb(245, 213, 69);
+     transform: scale(1.1);
+   }
+   
+   .footer-bottom .copyright p {
+     text-align: center;
+     font-size: 16px;
+     padding-top: 10px;
+   }
+   
+   .footer-bottom .copyright i {
+     color: rgb(245, 213, 69);
+   }
+   
+   .footer-bottom .copyright a {
+     color: #8d99ae;
+     text-decoration: none;
+   }
+   
+   .footer-bottom .copyright a:hover {
+     color: rgb(245, 213, 69);
+   }
+   /* Footer Bottom End*/
+   
+   /* Device Responsive Start */
