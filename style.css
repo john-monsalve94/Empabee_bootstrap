@@ -12,6 +12,10 @@
   --geebung-900: rgb(112, 61, 19);
   --geebung-950: rgb(65, 31, 7);
 }
+*{
+  margin: 0;
+  padding: 0;
+}
 i{
   color: var(--geebung-400);;
     font-size: 20px;
@@ -274,7 +278,42 @@ color: var(--geebung-800);
   margin-left: 20%;
   
 }
+/* .............................contactenos.............................. */
+.contactenos{
+  margin: 0;
+  padding: 0;
+}
+.contactenos-contenedor1{
+  justify-content: end;
+  display: flex;
+  height: 300px;
+  
+}
+.contactenos-contenedor2{
+  display: flex;
+  
+  height: 300px;
 
+}
+.contactenos-contenedor-sub1{
+  height: 300px;
+  background-color: var(--geebung-200);
+}
+.contactenos-contenedor-sub2{
+  height: 300px;
+  background-color:var(--geebung-300);
+}
+textarea, input{
+  width: 100%;
+  list-style: none
+}
+.formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+/*  */
+
+/* .............................contactenos(end).............................. */
 
 
 /* .....................sensores-productos (end)......................... */
