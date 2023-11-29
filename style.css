@@ -269,6 +269,9 @@ margin-left: 20%;
 color: var(--geebung-800);
 
 }
+.carousel-caption a p{
+  color: var(--geebung-400);
+}
 .carousel-caption,.carousel-indicators{
   position: unset;
   
