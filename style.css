@@ -279,9 +279,9 @@ color: var(--geebung-800);
   
 }
 /* .............................contactenos.............................. */
-.contactenos{
-  margin: 0;
-  padding: 0;
+.contactanos{
+width: 100%;
+height: 600px;
 }
 .contactenos-contenedor1{
   justify-content: end;
@@ -297,20 +297,63 @@ color: var(--geebung-800);
 }
 .contactenos-contenedor-sub1{
   height: 300px;
-  background-color: var(--geebung-200);
+  /* background-color: var(--geebung-200); */
 }
 .contactenos-contenedor-sub2{
   height: 300px;
-  background-color:var(--geebung-300);
+  background-color:var(--geebung-200);
 }
 textarea, input{
   width: 100%;
-  list-style: none
+  padding-left: 10px;
+  border-radius: 5px;
+
 }
 .formulario{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  height: 100%;
+  padding: 20px;
+}
+.contactenos-contenedor-sub2,.contactenos-contenedor-sub1,.contactenos-contenedor1,.contactenos-contenedor2{
+  height: 90%;
+}
+
+.button-form{
+  display: flex;
+  justify-content: center;
+  
+}
+.contactenos-contenedor1{
+  position: relative;
+  
+}
+.contactenos-contenedor-sub1{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 80%;
+  top: 10%;
+  left: 17%;
+  padding-left: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  justify-content: space-between;
+  border: 2px solid var(--geebung-200);
+}
+.contactenos-contenedor-sub1 img{
+  width: 50%;
+  
+}
+.contactenos-contenedor-sub1 >div h2{
+  font-size: 1rem;
+  
+}
+.contactenos-texto,.formulario-texto{
+  font-size: 2rem;
+}
+
 /*  */
 
 /* .............................contactenos(end).............................. */
@@ -455,4 +498,3 @@ footer {
 .footer-bottom .copyright a:hover {
   color: rgb(245, 213, 69);
 }
-/* Footer Bottom End*/

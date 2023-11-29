@@ -35,7 +35,7 @@
     <div class="container-fluid d-flex col-12 col-sm-12 col-md-12 col-lg-12">
 
       <a class="navbar-brand d-flex col-5 col-sm-3 col-md-3 col-lg-4 align-items-center flex-column" href="index.html ">
-        <img src="images/L_EmpaBee.png" alt="Logo" width="160" height="80" class="d-inline-block align-text-top">
+        <img src="images/L_EmpaBee.png" alt="Logo" width="140" height="80" class="d-inline-block align-text-top">
 
 
       </a>
@@ -61,13 +61,23 @@
         <ul class="navbar-nav col-md-7 col-lg-9 ">
 
           <li class="nav-item">
+            <a class="nav-link" href="#">Suscripciones</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Habitaciones</a>
+            <a class="nav-link" href="#">Plataforma</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Reservas</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+            </a>
+            <ul class="dropdown-menu ">
+              <li><a class="dropdown-item" href="recepcionista.html">Sensor de PH </a></li>
+              <li><a class="dropdown-item" href="#">Sensor de Humedad</a></li>
+              <li><a class="dropdown-item" href="#">Sensor de Peso</a></li>
+            </ul>
           </li>
         </ul>
         <ul class="navbar-nav align-items-center col-md-5  col-lg-3 ">
@@ -300,51 +310,63 @@
   </section>
   <section class="contactanos container-fluid col-12 d-flex">
     <div class="contactenos-contenedor1 col-4">
-      <div class="contactenos-contenedor-sub1 col-10">
+      <div class="contactenos-contenedor-sub1 col-10 ">
 
-
+        <h2 class="contactenos-texto">
+          Contacto
+        </h2>
+        <div >
+          <a href="" class=" d-flex mb-3">
+            <i class="bi-whatsapp "></i>
+          </a>
+          <h2>
+            Empabee@gmail.com
+          </h2>
+          <h2>
+            +57 325 6389659
+          </h2>
+        </div>
+ 
+        <img src="images/L_EmpaBee.png" class="img-fluid" alt="">
 
       </div>
 
     </div>
-    <div class="contactenos-contenedor2 col-8">
+    <div class="contactenos-contenedor2 col-8 ">
       <div class="contactenos-contenedor-sub2 col-10">
-        <form class="formulario col-12 h-100 ">
-          <h1>¿Como podemos ayudarte?</h1>
+        <form class="formulario col-12 h-100">
+          <h2 class="formulario-texto text-center">¿Como podemos ayudarte?</h2>
           <div class="row container">
             <div class="nombre col-6">
-             
-              <input type="text" id="name" name="user_name" placeholder="Nombre" />
+
+              <input type="text" id="name" name="user_name" placeholder="Nombre" class="border-0" />
             </div>
 
             <div class="correo col-6">
-              
-              <input type="email" id="mail" name="user_email" placeholder="Email" />
+
+              <input type="email" id="mail" name="user_email" placeholder="Email" class="border-0" />
             </div>
           </div>
           <div class="row container">
             <div class="mensaje col-12">
-              
-              <textarea id="msg" name="user_message" placeholder="Mensaje"></textarea>
+
+              <textarea id="msg" name="user_message" placeholder="Mensaje" class="border-0"></textarea>
             </div>
           </div>
           <div class="row container">
-            <div class="telefono col-12">
-              
-              <textarea id="msg" name="user_message" placeholder="Telefono"></textarea>
+            <div class="telefono col-6">
+
+              <textarea id="msg" name="user_message" placeholder="Numero de Telefono" class="border-0"></textarea>
             </div>
           </div>
           <div class="row container">
 
-            <div class="button">
-              <button type="submit">Enviar</button>
+            <div class="button-form">
+              <button class="boton-explora btn btn-outline-warning " type="submit">Enviar</button>
             </div>
 
           </div>
       </div>
-
-
-
       </form>
 
     </div>
