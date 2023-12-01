@@ -456,6 +456,7 @@ footer {
   font-size: 16px;
   color: #ffffff;
   width: 100%;
+  height: 15vh;
 }
 
 .footer-bottom .payment-method ul {

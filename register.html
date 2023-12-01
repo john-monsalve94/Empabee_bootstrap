@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registre-se</title>
+
+    <!--Bootstrap import-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
+    
+    <!--CSS import-->
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+    <div class="container col-11 col-md-9" id="form-container">
+        <div class="row align-items-center gx-5">
+            <div class="col-md-6 order-md-1">
+                <h1>Registrarse</h1>
+                <form class="d-flex flex-column">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Digite su nombre completo">
+                        <label for="name" class="form-label">Digite su nombre completo</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control"  id="email" name="email" placeholder="Digite su e-mail">
+                        <label for="email" class="form-label">Digite su e-mail</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Digite su contraseña">
+                        <label for="password" class="form-label">Digite su contraseña</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirme su contraseña de acceso">
+                        <label for="confirmPassword" class="form-label">Confirmar contraseña</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input type="checkbox" class="form-check-input" id="privacyTerms" name="privacyTerms">
+                        <label for="privacyTerms" class="form-check-label">Acepto <span><a href="#">terminos de privacidad</a></span></label>
+                    </div>
+
+                    <button type="submit" class="btn ">Crear cuenta</button>
+                    <div class="col-12 d-flex flex-column" id="link-container">
+                        <a href="./login.html" id="login">¿Ya tienes una cuenta? Entre aquí</a>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 order-md-2">
+                <div class="col-12">
+                    <img src="images/sign_up.svg" alt="Registre-se no sistema" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
